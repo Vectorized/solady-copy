@@ -97,6 +97,7 @@ jobs:
           skip: ./.git,package-lock.json,ackee-blockchain-solady-report.pdf,EIP712Mock.sol
     
   gas-diff:
+    permissions: write-all
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
